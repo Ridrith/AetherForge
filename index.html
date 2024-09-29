@@ -1,0 +1,141 @@
+<div class="sheet-container">
+    <!-- Character Info Section -->
+    <div class="section character-info">
+        <h2 class="section-title">Character Info</h2>
+        <div class="grid-2">
+            <!-- Left Column -->
+            <div>
+                <label for="character_name">Character Name:</label>
+                <input type="text" name="attr_character_name" />
+
+                <label for="race">Race:</label>
+                <input type="text" name="attr_race" />
+
+                <label for="physical_features">Physical Features:</label>
+                <input type="text" name="attr_physical_feature_1" placeholder="1." />
+                <input type="text" name="attr_physical_feature_2" placeholder="2." />
+                <input type="text" name="attr_physical_feature_3" placeholder="3." />
+            </div>
+
+            <!-- Right Column -->
+            <div>
+                <label for="one_unique_thing">One Unique Thing:</label>
+                <input type="text" name="attr_one_unique_thing" placeholder="1." />
+
+                <label for="personality_traits">Personality Traits:</label>
+                <input type="text" name="attr_personality_trait_1" placeholder="1." />
+                <input type="text" name="attr_personality_trait_2" placeholder="2." />
+                <input type="text" name="attr_personality_trait_3" placeholder="3." />
+            </div>
+        </div>
+
+        <!-- Backstory Section (Full Width) -->
+        <div class="backstory-section">
+            <label for="backstory">Backstory:</label>
+            <textarea name="attr_backstory"></textarea>
+        </div>
+    </div>
+
+    <!-- Combat Section -->
+    <div class="section combat">
+        <h2 class="section-title">Combat</h2>
+        <!-- Action Points -->
+        <div class="ap-container">
+            <label for="attr_ap">Action Points (Max 10):</label>
+            <div class="ap-tracker">
+                <input type="checkbox" name="attr_ap1" />
+                <input type="checkbox" name="attr_ap2" />
+                <input type="checkbox" name="attr_ap3" />
+                <input type="checkbox" name="attr_ap4" />
+                <input type="checkbox" name="attr_ap5" />
+                <input type="checkbox" name="attr_ap6" />
+                <input type="checkbox" name="attr_ap7" />
+                <input type="checkbox" name="attr_ap8" />
+                <input type="checkbox" name="attr_ap9" />
+                <input type="checkbox" name="attr_ap10" />
+            </div>
+        </div>
+
+        <!-- Attack and Defense -->
+        <div class="grid-2">
+            <div>
+                <label for="attr_attack_name">Attack Name:</label>
+                <input type="text" name="attr_attack_name" />
+                <label for="attr_attack_tn">Target Number (TN):</label>
+                <input type="text" name="attr_attack_tn" />
+                <button class="roll" type="roll" name="roll_attack" value="/roll [[1d1000]] + @{attack_tn} {{name=@{attack_name}}}">Roll Attack</button>
+            </div>
+
+            <div>
+                <label for="attr_defense_name">Defense Name:</label>
+                <input type="text" name="attr_defense_name" />
+                <label for="attr_defense_tn">Target Number (TN):</label>
+                <input type="text" name="attr_defense_tn" />
+                <button class="roll" type="roll" name="roll_defense" value="/roll [[1d1000]] + @{defense_tn} {{name=@{defense_name}}}">Roll Defense</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Skills Section -->
+    <div class="section skills">
+        <h2 class="section-title">Skills</h2>
+        <div class="grid-2">
+            <!-- Left Column (Skills) -->
+            <div>
+                <label for="skill_name_1">Skill Name 1:</label>
+                <input type="text" name="attr_skill_name_1" />
+                <label for="skill_tn_1">Target Number (TN):</label>
+                <input type="text" name="attr_skill_tn_1" />
+                <button class="roll" type="roll" name="roll_skill_1" value="/roll [[1d1000]] + @{skill_tn_1} {{name=@{skill_name_1}}}">Roll Skill</button>
+
+                <label for="skill_name_2">Skill Name 2:</label>
+                <input type="text" name="attr_skill_name_2" />
+                <label for="skill_tn_2">Target Number (TN):</label>
+                <input type="text" name="attr_skill_tn_2" />
+                <button class="roll" type="roll" name="roll_skill_2" value="/roll [[1d1000]] + @{skill_tn_2} {{name=@{skill_name_2}}}">Roll Skill</button>
+
+                <label for="skill_name_3">Skill Name 3:</label>
+                <input type="text" name="attr_skill_name_3" />
+                <label for="skill_tn_3">Target Number (TN):</label>
+                <input type="text" name="attr_skill_tn_3" />
+                <button class="roll" type="roll" name="roll_skill_3" value="/roll [[1d1000]] + @{skill_tn_3} {{name=@{skill_name_3}}}">Roll Skill</button>
+            </div>
+
+            <!-- Right Column (Skills) -->
+            <div>
+                <label for="skill_name_4">Skill Name 4:</label>
+                <input type="text" name="attr_skill_name_4" />
+                <label for="skill_tn_4">Target Number (TN):</label>
+                <input type="text" name="attr_skill_tn_4" />
+                <button class="roll" type="roll" name="roll_skill_4" value="/roll [[1d1000]] + @{skill_tn_4} {{name=@{skill_name_4}}}">Roll Skill</button>
+
+                <label for="skill_name_5">Skill Name 5:</label>
+                <input type="text" name="attr_skill_name_5" />
+                <label for="skill_tn_5">Target Number (TN):</label>
+                <input type="text" name="attr_skill_tn_5" />
+                <button class="roll" type="roll" name="roll_skill_5" value="/roll [[1d1000]] + @{skill_tn_5} {{name=@{skill_name_5}}}">Roll Skill</button>
+
+                <label for="skill_name_6">Skill Name 6:</label>
+                <input type="text" name="attr_skill_name_6" />
+                <label for="skill_tn_6">Target Number (TN):</label>
+                <input type="text" name="attr_skill_tn_6" />
+                <button class="roll" type="roll" name="roll_skill_6" value="/roll [[1d1000]] + @{skill_tn_6} {{name=@{skill_name_6}}}">Roll Skill</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Limit Break Section -->
+    <div class="section limit-break">
+        <h2 class="section-title">Limit Break</h2>
+        <label for="limitbreak_name">Limit Break Name:</label>
+        <input type="text" name="attr_limitbreak_name" />
+        
+        <label for="limitbreak_description">Limit Break Description:</label>
+        <textarea name="attr_limitbreak_description"></textarea>
+
+        <label for="limitbreak_tn">Target Number (TN):</label>
+        <input type="text" name="attr_limitbreak_tn" />
+        
+        <button class="roll" type="roll" name="roll_limitbreak" value="/roll [[1d1000]] + @{limitbreak_tn} {{name=@{limitbreak_name}}}">Roll Limit Break</button>
+    </div>
+</div>
